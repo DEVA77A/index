@@ -21,6 +21,26 @@
 // const [one,two]=aa;
 // console.log(two);
 
-let b=[1,2,3,4,5];
-const [first,...rest]=b;
-console.log(rest);
+// let b=[1,2,3,4,5];
+// const [first,...rest]=b;
+// console.log(rest);
+
+// let n =[1,2,3,4,5];
+// const [o,...t]=n;
+// console.log(t);
+// let m=[...n,6,7,8,9];
+// console.log(m);
+
+// let n1={x:1,y:2};
+// let n2={a:3,b:4};
+// let spread={...n1,...n2};
+// console.log(spread);
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1')
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+// let name ='deva';
+// let age =200;
+// console.log(`my name is ${name} and my age is ${age}`);
+
