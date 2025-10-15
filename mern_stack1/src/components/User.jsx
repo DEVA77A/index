@@ -1,5 +1,4 @@
 import React from 'react'
-import { LightningCSSOptions } from 'vite'
 
 const User = ({name,department}) => {
   return (
