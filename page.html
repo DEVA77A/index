@@ -1,112 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Landing — Example</title>
-
-  <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-  <!-- Page styles (make sure this file is saved as style.css) -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <!-- simple SVG logo so you don't need a separate file -->
-      <div class="logo" aria-label="Site logo">
-        <svg width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-          <rect width="120" height="24" rx="4" fill="#fff" opacity="0.06"></rect>
-          <text x="8" y="16" fill="white" font-family="Inter, sans-serif" font-weight="700" font-size="12">Header Logo</text>
-        </svg>
-      </div>
-
-      <nav class="site-nav" role="navigation" aria-label="Main navigation">
-        <a href="#">header link one</a>
-        <a href="#">header link two</a>
-        <a href="#">header link three</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO (left: copy, right: image) -->
-  <section class="hero" role="region" aria-label="Hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1>welcome to my webpage</h1>
-        <p class="lead">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-        <a class="btn-primary" href="#" role="button">Sign up 
-        </a>
-      </div>
-
-      <div class="hero-image" aria-hidden="false">
-        <!-- Use a local file (images/hero.jpg) or keep the placeholder while testing -->
-        <img src="https://via.placeholder.com/640x360.png?text=this+is+a+placeholder+for+an+image" alt="Illustration placeholder">
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES / ILLUSTRATIONS ROW -->
-  <section class="features" role="region" aria-label="Features">
-    <div class="container">
-      <h2 class="center">Information about webpage</h2>
-
-      <div class="features-grid" role="list">
-        <div class="feature-item" role="listitem">
-          <div class="feature-illustration" aria-hidden="true"></div>
-          <p>this is some subtext under an illustration or image</p>
+    <div class="header">
+        <div class="left">
+            <h2><strong>Header Logo</strong></h2>
         </div>
-
-        <div class="feature-item" role="listitem">
-          <div class="feature-illustration" aria-hidden="true"></div>
-          <p>this is some subtext under an illustration or image</p>
+        <ul class="right">
+            <li>header link one</li>
+            <li>header link two</li>
+            <li>header link three</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="left-side-main">
+            <h1 class="web">This website is awesome</h1>
+            <p class="subtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+            <button class="signup">Sign up</button>
         </div>
-
-        <div class="feature-item" role="listitem">
-          <div class="feature-illustration" aria-hidden="true"></div>
-          <p>this is some subtext under an illustration or image</p>
+        <div class="right-side-main">
+           <p class="place">this is a placeholder for an image</p>
         </div>
+    </div>
 
-        <div class="feature-item" role="listitem">
-          <div class="feature-illustration" aria-hidden="true"></div>
-          <p>this is some subtext under an illustration or image</p>
+    <div>
+        <center><h1>Some random information.</h1></center>
+        <div class="boxes">
+           <div class="box1">
+               <div class="bord"></div>
+               <div class="bord-text">this is some subtext under an illustration or image</div>
+           </div>
+            <div class="box2">
+                <div class="bord"></div>
+                <div class="bord-text">this is some subtext under an illustration or image</div>
+            </div>
+            <div class="box3">
+                <div class="bord"></div>
+                <div class="bord-text">this is some subtext under an illustration or image</div>
+            </div>
+            <div class="box4">
+                <div class="bord"></div>
+                <div class="bord-text">this is some subtext under an illustration or image</div>
+            </div>
         </div>
-      </div>
+        <div class="quote">
+            <p><i>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. who knows? All I know is that it looks nice</i></p>
+            <h6 class="author"><strong>Deva</strong></h6>
+        </div>
+        <div class="last-box">
+            <div class="left-last">
+               <h4 class="call"><b>Call to action! It's time!</b></h4>
+               <p class="msg">Sign up for our product  by clicking that button over there!</p>
+            </div>
+            <div class="right-last">
+                <button class="insign">Sign up</button>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <!-- TESTIMONIAL / QUOTE -->
-  <section class="testimonial" role="region" aria-label="Testimonial">
-    <div class="container">
-      <blockquote>
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-        <cite>-wanted/.</cite>
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <section class="cta" role="region" aria-label="Call to action">
-    <div class="container cta-inner">
-      <div class="cta-text">
-        <h3>Call to action! It's time!</h3>
-        <p>Sign up for our product by clicking that button right over there!</p>
-      </div>
-      <div class="cta-action">
-        <a class="btn-outline" href="#" role="button">Sign up</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <p>Copyright © The Odin Project 2021</p>
-    </div>
-  </footer>
 
 </body>
+<footer>
+    <p>Copyright © The Odin Project 2021</p>
+</footer>
 </html>
