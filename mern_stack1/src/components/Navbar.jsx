@@ -7,3 +7,5 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link> 
         </div>
     )}
+
+export default Navbar
